@@ -4,15 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= filename %></title>
-    <link rel="stylesheet" href="/stylesheets/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <div class="main w-full min-h-screen bg-zinc-900">
-        <div class="content p-10 text-white">
-            <h1 class="text-white text-3xl mb-5"><%= filename %></h1>
-            <pre class="bg-zinc-800 p-5 rounded-md"><%= content %></pre>
-            <a class="text-blue-500 inline-block mt-5" href="/">Back to tasks</a>
+    <div class="main w-full min-h-screen bg-zinc-900 text-white p-4">
+        <div class="p-5 bg-zinc-500 bg-opacity-20 backdrop-blur-lg rounded-lg">
+            <h1 class="text-3xl text-center"><%= filename %></h1>
+            <p class="pt-2"><%= filedata %></p>
         </div>
     </div>
 </body>
